@@ -1,2 +1,2 @@
 # Telegram-bot
-A code repo for javavscript series at Chai aur Code youtube channel
+An e-commerce food ordering telegram bot which handles the order and has an frontend made form react.
