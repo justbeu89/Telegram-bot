@@ -1,0 +1,106 @@
+:root {
+  --cart-text: tomato;
+  --button-green: #4CAF50;
+  --button-hover: #45a049;
+  --button-disabled-bg: #4CAF50;
+  --button-disabled-text: #ffffff;
+}
+
+.cart__container {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  margin: 1rem;
+  font-weight: bold;
+  color: var(--cart-text, tomato);
+}
+
+.cart__checkout-button {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  background-color: var(--button-green, #4CAF50);
+  color: #e8e8e8; /* Ensure contrast for better readability */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cart__checkout-button:hover {
+  background-color: var(--button-hover, #45a049);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cart__checkout-button:focus {
+  outline: 3px solid rgba(76, 175, 80, 0.5);
+  outline-offset: 2px;
+}
+
+.cart__checkout-button:disabled {
+  background-color: var(--button-disabled-bg, #cccccc);
+  color: var(--button-disabled-text, #ffffff);
+  cursor: not-allowed;
+  opacity: 0.7;
+  transform: none;
+  box-shadow: none;
+}
+
+.cart__container {
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.cart__empty-message {
+  color: tomato;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: left;
+}
+
+.cart__items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart__item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart__item-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #35c467;
+  margin-bottom: 5px;
+}
+
+.cart__item-quantity {
+  font-size: 0.9rem;
+  color: tomato;
+  margin-bottom: 5px;
+}
+
+.cart__item-price {
+  font-weight: bold;
+  color: #2ecc71;
+}
+
+.cart__total {
+  text-align: left;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 2px solid #eee;
+  font-weight: bold;
+}

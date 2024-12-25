@@ -1,0 +1,32 @@
+:root {
+  --btn-hover: #4CAF50;
+  --btn-active: #45a049;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  box-shadow: 1px -3px 52px -5px rgba(0, 0, 0, 0.77);
+  cursor: pointer;
+  color: tomato;
+  transition: all 0.3s ease;
+}
+
+.btn.add {
+  background-color: goldenrod;
+}
+
+.btn:active {
+  transform: scale(.98);
+}
+
+.btn.add:hover {
+  background-color: var(--btn-hover);
+  color: white;
+}
+
+.btn.add:active {
+  background-color: var(--btn-active);
+}
